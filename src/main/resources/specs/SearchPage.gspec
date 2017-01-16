@@ -1,0 +1,11 @@
+@objects
+    SearchCompanyName       css   div.l-nopaddings > table > tbody > tr > td > div > a
+    
+= Main section =
+
+    SearchCompanyName:
+            color-scheme  5% #09f
+            css font-family starts "Arial"
+            css font-family ends "sans-serif"
+            css font-size is "12.6px"
+            text is "Новые Облачные Технологии"

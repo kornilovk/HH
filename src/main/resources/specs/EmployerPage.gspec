@@ -1,0 +1,23 @@
+@objects
+
+    IT                  css   div > div:nth-child(1) > div.b-emppage-vacancies-group-title > a
+    Vacansys-*          css   div.b-vacancy-list-name > a
+
+= section =
+
+    IT:
+        css font-family starts "Arial"
+        css font-family ends "sans-serif"
+        css font-size is "16px"
+        text is "Информационные технологии, интернет, телеком"
+
+= Content =
+
+    @forEach [Vacansys-*] as item, prev as previousItem
+        ${item}:
+            below   ${previousItem} 60 to 70 px
+            height 16 to 40 px
+            width 111 to 275 px
+            css font-size is "14px"
+            css font-family starts "Arial"
+            css font-family ends "sans-serif"

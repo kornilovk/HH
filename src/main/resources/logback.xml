@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ Copyright 2016 Russian Post
+  ~
+  ~  This source code is Russian Post Confidential Proprietary.
+  ~  This software is protected by copyright. All rights and titles are reserved.
+  ~  You shall not use, copy, distribute, modify, decompile, disassemble or reverse engineer the software.
+  ~  Otherwise this violation would be treated by law and would be subject to legal prosecution.
+  ~  Legal use of the software provides receipt of a license from the right holder only.
+  -->
+
+<configuration scan="true" scanPeriod="2 seconds">
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+<!--            <charset>UTF-8</charset>-->
+            <outputPatternAsHeader>true</outputPatternAsHeader>
+            <pattern>%m%n</pattern>
+        </encoder>
+<!--        <encoder>
+            <Pattern>%m%n</Pattern>
+        </encoder>-->
+    </appender>
+
+
+    <logger name="ch.qos.logback" level="WARN"/>
+    <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+        <resetJUL>true</resetJUL>
+    </contextListener>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+
+    </root>
+
+</configuration>

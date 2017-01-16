@@ -1,0 +1,42 @@
+@objects
+
+    SearchField       css   div.bloko-control-group__main>input
+    SearchElement     css   div.bloko-control-group__minor.HH-Navi-SearchSelector-SelectWrapper>select
+    SearchButton      css   .bloko-button.bloko-button_primary.bloko-button_stretched
+    SearchFrame       css   div.navi__top.HH-Navi-StickyMenu-TopBlock
+
+= Header section =
+
+    SearchField:
+        inside SearchFrame
+        near SearchElement 0 px left
+
+        css font-family starts "Arial"
+        css font-family ends "sans-serif"
+        css font-family contains "Helvetica"
+        css font-family matches ".*Helvetica.*"
+
+
+    SearchElement:
+        inside SearchFrame
+        height 30 to 50 px
+        near SearchButton 5 px left
+        color-scheme > 70% #f9f9f9
+        css font-family starts "Arial"
+        css font-family ends "sans-serif"
+        css font-family contains "Helvetica"
+        css font-family matches ".*Helvetica.*"
+
+
+    SearchButton:
+        text is "Найти"
+        inside SearchFrame
+        aligned horizontally all  SearchButton
+        color-scheme > 80% #0f8fee
+        height 30 to 50 px
+
+
+    SearchFrame:
+        color-scheme > 70% #f5f5f5
+        width 1263 px
+        height 70 to 100 px
