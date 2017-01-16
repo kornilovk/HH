@@ -20,23 +20,6 @@ import hh.Steps.HomePage;
 @Description("features")
 public class TestHh extends Base {
 
-    //  EventFiringWebDriver driver;
-
-/*    @BeforeTest
-    public WebDriver driver()  {
-        FirefoxDriverManager.getInstance().setup();
-        DesiredCapabilities cap = new DesiredCapabilities();
-        cap.setJavascriptEnabled(true);
-        driver =
-                new EventFiringWebDriver(new FirefoxDriver(cap));
-        driver.register(new WebDriverLogger());
-        WebDriverRunner.setWebDriver(driver);
-        WebDriverRunner.setWebDriver(driver);
-        WebDriverRunner.getWebDriver().manage().window().maximize();
-        return driver;
-    }*/
-
-
     @Features("My Feature")
     @Stories({"Story1", "Story2"})
     @Test

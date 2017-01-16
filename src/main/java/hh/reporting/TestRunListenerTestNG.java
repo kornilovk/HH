@@ -2,14 +2,10 @@ package hh.reporting;
 
 import com.codeborne.selenide.Screenshots;
 import com.google.common.io.Files;
-import hh.Base;
 import ru.yandex.qatools.allure.annotations.Attachment;
 import org.testng.*;
 
 import java.io.File;
-import java.net.URL;
-
-import static com.google.common.io.Files.toByteArray;
 
 
 public class TestRunListenerTestNG implements ITestListener, ISuiteListener, IInvokedMethodListener {

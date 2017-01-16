@@ -8,15 +8,11 @@ import org.openqa.selenium.By;
 import ru.yandex.qatools.allure.annotations.Step;
 
 import java.util.Iterator;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Selenide.page;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertNotEquals;
+
 
 /**
  * Created by KKornilov on 15.01.2017.

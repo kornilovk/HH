@@ -6,7 +6,6 @@ import com.codeborne.selenide.SelenideElement;
 import hh.Base;
 import org.openqa.selenium.By;
 
-import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.Select;
 import ru.yandex.qatools.allure.annotations.Step;
 
@@ -15,9 +14,6 @@ import java.util.Iterator;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Selenide.page;
-import static com.galenframework.api.Galen.checkLayout;
-import static hh.Base.driver;
-import static java.util.Arrays.asList;
 
 
 
@@ -36,9 +32,6 @@ public class HomePage extends Base {
         mainpage.SearchField().shouldBe(Condition.appear).sendKeys(CompanyName);
         Select dropdown = new Select(mainpage.SearchElement());
         dropdown.selectByVisibleText("Компании");
-
-     //   checkLayout("specs/HomePage.gspec", asList("desktop"));
-
         Iterator element = mainpage.SearchButton().iterator();
         while (element.hasNext()) {
             SelenideElement elem = (SelenideElement) element.next();
